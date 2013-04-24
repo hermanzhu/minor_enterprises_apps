@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" android:background="@drawable/di" >
+
+    <RelativeLayout
+        android:id="@+id/gongsijieshao_topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toutu" >
+
+        <Button
+            android:id="@+id/gongsijieshao_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fanhui2x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="公司介绍"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+     
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/dianhua_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gongsijieshao_topBar"
+            android:orientation="vertical"
+            android:paddingTop="11dp" >
+
+            <ImageView
+                android:id="@+id/gongsijieshao_imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_722x"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="电话:"
+                android:textSize="9sp" 
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/gongsijieshao_textView1"/>
+               
+        </LinearLayout>
+		<ImageView
+                android:id="@+id/gongsijieshao_imageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_722x"
+                android:scaleType="center" 
+                android:layout_below="@id/dianhua_linearLayout"
+                android:paddingTop="50dp"/>
+      
+
+
+</RelativeLayout>

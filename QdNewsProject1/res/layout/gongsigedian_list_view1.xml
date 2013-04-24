@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/gongsigedianListViewReLayout2" >
+<LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  android:orientation="vertical"
+            android:id="@+id/gongsigedianListViewLinearLayout_1"
+             android:paddingLeft="12dp">
+        <TextView
+            android:paddingTop="12dp"
+           
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+           android:textSize="22sp"
+            android:id="@+id/gongsigedianListViewTextView_1"
+            android:textColor="#8A360F"
+            
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            
+            android:textSize="12sp"
+            android:text="  咨询热线" 
+            
+           
+            android:id="@+id/gongsigedianListViewTextView_2"
+           />
+      
+            <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+          
+            android:textSize="12sp"
+            android:text="  咨询热线1" 
+            
+            android:id="@+id/gongsigedianListViewTextView_3"
+           />
+  
+</LinearLayout>
+<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_722x"
+        android:layout_alignParentRight="true"   
+            android:id="@+id/gongsigedianListViewImageView_1"
+            android:paddingRight="2dp"
+           />
+</RelativeLayout>

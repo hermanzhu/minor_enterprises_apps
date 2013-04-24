@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/ditu"
+    android:paddingLeft="30dp" >
+    <RelativeLayout
+        android:id="@+id/rightMenuTopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       >
+    <EditText android:id="@+id/rightMenuTextView1"
+        	  android:layout_width="fill_parent"
+        	  android:layout_height="wrap_content"
+        	  android:background="@drawable/sousuo2x"
+        	  android:text="        搜索:"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/rightMenuListView1"
+        	  android:layout_width="fill_parent"
+        	  android:layout_height="wrap_content"
+        	  android:layout_below="@id/rightMenuTopbar"
+        	  android:background="@drawable/ditu"
+        	></ListView>
+
+</RelativeLayout>

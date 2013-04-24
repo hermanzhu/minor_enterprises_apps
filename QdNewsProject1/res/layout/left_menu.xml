@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/ditu" >
+      <RelativeLayout
+        android:id="@+id/leftMenuTopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dingbu2x" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dianhua12x"
+            android:layout_centerVertical="true"
+            android:id="@+id/left_menu_tel_imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:text="咨询热线：400-167-6668" 
+            android:textColor="#FFFFFF"
+            android:id="@+id/left_menu_tel_textView"/>
+      
+        
+    </RelativeLayout>
+    <ListView android:id="@+id/leftMenuListView1"
+        	  android:layout_width="fill_parent"
+        	  android:layout_height="wrap_content"
+        	  android:layout_below="@id/leftMenuTopbar"
+        	  android:background="@drawable/ditu"
+        	></ListView>
+
+</RelativeLayout>

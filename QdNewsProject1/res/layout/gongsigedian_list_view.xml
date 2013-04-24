@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/gongsidedianListViewReLayOut1" >
+    <LinearLayout  android:layout_width="match_parent"
+    android:layout_height="fill_parent" android:orientation="horizontal" >
+      
+	<LinearLayout  android:layout_width="match_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:text="  咨询热线" 
+            android:textColor="#FFFFFF"
+            android:id="@+id/gongsigedianListViewTextViewName"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text=" 地址" 
+            android:textColor="#FFFFFF"
+            android:id="@+id/gongsigedianListViewTextViewAddr"
+            />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text=" 地址" 
+            android:textColor="#FFFFFF"
+            android:id="@+id/gongsigedianListViewTextViewTel"
+            />
+     </LinearLayout> 
+           <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gongsigedianListViewImageView1" 
+            android:layout_alignParentRight="true"
+           />
+  
+</LinearLayout>
+</RelativeLayout>

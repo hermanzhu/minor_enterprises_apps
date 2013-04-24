@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/leftMenuListViewReLayout1" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dianhua12x" 
+            android:id="@+id/leftMenuListViewImageView1"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/leftMenuListViewImageView1"
+            android:textSize="20dp"
+            android:text="  咨询热线" 
+            android:textColor="#FFFFFF"
+            android:id="@+id/leftMenuListViewTextView1"
+            android:layout_centerVertical="true"/>
+      
+           <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jiantou12x"
+            android:id="@+id/leftMenuListViewImageView2" 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+  
+
+</RelativeLayout>

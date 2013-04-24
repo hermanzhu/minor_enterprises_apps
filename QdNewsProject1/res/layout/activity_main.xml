@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/zaixianyuyue_topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toutu" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fanhui2x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="30dp"
+            android:text="在线预约" 
+            android:textColor="#FFFFFF"/>
+      
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+            android:background="@drawable/fasong" />
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/zaixianyuyue_mainRelativeLayout"
+    android:layout_below="@id/zaixianyuyue_topBar"
+     android:background="@drawable/di">
+<EditText
+	android:id="@+id/dianhua_editText"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	
+	android:textSize="18sp"
+	android:layout_below="@+id/dianhua_linearLayout"
+	android:layout_alignParentLeft="true" 
+	android:inputType="number"
+	/>
+<LinearLayout
+	android:id="@+id/dianhua_linearLayout"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:layout_alignParentTop="true"
+	android:layout_alignParentLeft="true"	
+	android:paddingTop="11dp"
+	>
+<ImageView
+	android:id="@+id/dianhua_imageView"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/dianhua2x" />
+<TextView
+	
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text=" 电话:"
+	android:textSize="20sp" 
+	android:layout_gravity="center_horizontal"
+	/>
+</LinearLayout>
+
+<EditText
+    android:id="@+id/liuyan_editText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/liuyan_linearLayout"
+    android:inputType="textMultiLine"
+    android:textSize="18sp" 
+    android:paddingTop="30dp"/>
+
+<LinearLayout
+	android:id="@+id/liuyan_linearLayout"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:layout_alignParentLeft="true"	
+	android:paddingTop="50dp"
+	android:layout_below="@+id/dianhua_editText">
+<ImageView
+	android:id="@+id/liuyan_imageView"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:src="@drawable/liuyan2x"/>
+<TextView
+	
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="留言" 
+	android:textSize="20sp" 
+	android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/rightMenuListViewReLayout1" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dianhua12x" 
+            android:id="@+id/rightMenuListViewImageView1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rightMenuListViewImageView1"
+            android:textSize="16dp"
+            
+            android:textColor="#FFFFFF"
+            android:id="@+id/rightMenuListViewTextView1"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rightMenuListViewTextView1"
+            android:textSize="16dp"
+          
+            android:textColor="#FFFFFF"
+            android:id="@+id/rightMenuListViewTextView2"
+            />
+      
+      
+  
+
+</RelativeLayout>

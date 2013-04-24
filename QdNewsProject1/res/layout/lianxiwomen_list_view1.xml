@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/lianxiwomenListViewReLayout2" >
+<LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  android:orientation="vertical"
+            android:id="@+id/lianxiwomenListViewLinearLayout_1"
+             android:paddingLeft="12dp">
+        <TextView
+            android:paddingTop="12dp"
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textSize="24sp"
+            android:id="@+id/lianxiwomenListViewTextView_1"
+            android:textColor="#8A360F"
+            android:paddingRight="50dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:textSize="16sp"
+            android:text="  咨询热线" 
+            
+            android:paddingRight="50dp"
+            android:id="@+id/lianxiwomenListViewTextView_2"
+           />
+      
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="50dp"
+            android:textSize="16sp"
+            android:text="  咨询热线1" 
+            
+            android:id="@+id/lianxiwomenListViewTextView_3"
+           />
+  
+</LinearLayout>
+
+</RelativeLayout>
