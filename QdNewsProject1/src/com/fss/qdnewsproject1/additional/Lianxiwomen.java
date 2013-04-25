@@ -1,5 +1,8 @@
 package com.fss.qdnewsproject1.additional;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -9,10 +12,12 @@ import com.fss.qdnewsproject1.R;
 import com.fss.qdnewsproject1.Constant.Contant1;
 import com.fss.qdnewsproject1.jsonitem.ShopsItem;
 import com.fss.qdnewsproject1.utils.HttpUtils;
+import com.fss.qdnewsproject1.utils.JsonApplication;
 import com.fss.qdnewsproject1.utils.JsonUtils;
 import com.fss.qdnewsproject1.utils.LianxiwomenTask;
 
 import android.app.Activity;
+import android.content.res.AssetManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -71,9 +76,13 @@ public class Lianxiwomen extends Activity {
 		protected List<HashMap<String, Object>> doInBackground(List<HashMap<String, Object>>... params) {
 			// TODO Auto-generated method stub
 			try {
-				String PATHS = Contant1.jsonUrlString;
-				String jsonString1 = HttpUtils.getJsonContent(PATHS);
-
+//				String PATHS = Contant1.jsonUrlString;
+//				String jsonString1 = HttpUtils.getJsonContent(PATHS);
+				String paths="jsontxt/txt.json";
+				String jsonString1=getJsonString(paths);
+				//JsonApplication ja=(JsonApplication)getApplication();
+				//String jsonString1=ja.getJsonString();
+				Log.d("json", jsonString1);
 				// Person person = JsonUtils.getPerson("person",
 				// jsonString1);
 				List<ShopsItem> shopsItems = JsonUtils.getShopsItems(
@@ -117,4 +126,20 @@ public class Lianxiwomen extends Activity {
 		}
 		
    }
+	public  String getJsonString(String filename){
+		StringBuilder sb=new StringBuilder();
+		AssetManager assetManager=getAssets();
+		try {
+			BufferedReader br=new BufferedReader(new InputStreamReader(assetManager.open(filename)));
+			String lineString="";
+			while((lineString=br.readLine())!=null){
+			//	Log.d("lineString", lineString);
+				sb.append(lineString);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return sb.toString();
+	}
 }

@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/rightMenuListViewImageView1"
-            android:textSize="16dp"
+            android:textSize="12dp"
             
             android:textColor="#FFFFFF"
             android:id="@+id/rightMenuListViewTextView1"
@@ -24,8 +24,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/rightMenuListViewTextView1"
             android:textSize="16dp"
+            android:visibility="invisible"
           
             android:textColor="#FFFFFF"
             android:id="@+id/rightMenuListViewTextView2"

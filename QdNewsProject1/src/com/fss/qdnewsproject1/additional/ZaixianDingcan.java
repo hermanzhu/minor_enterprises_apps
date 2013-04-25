@@ -13,6 +13,7 @@ public class ZaixianDingcan extends Activity{
 	
 	private Button backButton;
 	private Button sendButton;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class ZaixianDingcan extends Activity{
 		backButton=(Button)findViewById(R.id.zaixian_back);
 		sendButton=(Button)findViewById(R.id.zaixian_send);
 		backButton.setOnClickListener(new OnClickListener() {
-			
+		
 			@Override
 			public void onClick(View paramView) {
 				ZaixianDingcan.this.finish();

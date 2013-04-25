@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/zaixianyuyue_topBar"
-        android:background="@drawable/di" android:paddingLeft="20dp">
+        android:background="@drawable/di" >
 
         <EditText
             android:id="@+id/dianhua_editText"
@@ -52,7 +52,7 @@
             android:inputType="number"
             android:textSize="18sp"
             android:background="@drawable/dianhuakuang2x"
-            android:paddingRight="20dp" />
+           />
 
         <LinearLayout
             android:id="@+id/dianhua_linearLayout"
@@ -61,7 +61,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:orientation="horizontal"
-            android:paddingTop="11dp" >
+            android:paddingTop="11dp" android:paddingLeft="20dp" >
 
             <ImageView
                 android:id="@+id/dianhua_imageView"

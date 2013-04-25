@@ -1,5 +1,8 @@
 package com.fss.qdnewsproject1.additional;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -8,10 +11,13 @@ import java.util.List;
 import com.fss.qdnewsproject1.R;
 import com.fss.qdnewsproject1.Constant.Contant1;
 import com.fss.qdnewsproject1.jsonitem.ShopsItem;
+import com.fss.qdnewsproject1.utils.FileUtils;
 import com.fss.qdnewsproject1.utils.HttpUtils;
+import com.fss.qdnewsproject1.utils.JsonApplication;
 import com.fss.qdnewsproject1.utils.JsonUtils;
 
 import android.app.Activity;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -87,7 +93,10 @@ public class Gongsigedian extends Activity {
 
 					String PATHS = Contant1.jsonUrlString;
 					String jsonString1 = HttpUtils.getJsonContent(PATHS);
-
+//					JsonApplication ja=(JsonApplication)getApplication();
+//					String jsonString1=ja.getJsonString();
+					//Log.d("jsonstring", jsonString1);
+					
 					// Person person = JsonUtils.getPerson("person",
 					// jsonString1);
 					List<ShopsItem> shopsItems = JsonUtils.getShopsItems(
@@ -119,5 +128,7 @@ public class Gongsigedian extends Activity {
 
 		}.start();
 	}
+	
+	
 
 }

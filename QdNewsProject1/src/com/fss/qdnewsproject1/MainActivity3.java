@@ -1,5 +1,10 @@
 package com.fss.qdnewsproject1;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -19,6 +24,7 @@ import com.actionbarsherlock.view.MenuItem;
 import com.fss.qdnewsproject1.fragment.LeftMenuFragment;
 import com.fss.qdnewsproject1.fragment.RightMenuFragment;
 import com.fss.qdnewsproject1.utils.BitmapUtils;
+import com.fss.qdnewsproject1.utils.JsonApplication;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
 
@@ -26,9 +32,10 @@ public class MainActivity3 extends SlidingFragmentActivity implements OnClickLis
 
 	public MainActivity3() {
 		super();
+	
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	private ImageView iv1;
 	private Bitmap bm1;// Í¼Æ¬×ÊÔ´Bitmap
 	private Bitmap bm2;
@@ -39,14 +46,11 @@ public class MainActivity3 extends SlidingFragmentActivity implements OnClickLis
 	private ImageView iv2;
 	private TextView tv1;
 	private TextView tv2;
-	
-	 
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		
 		getSlidingMenu().setMode(SlidingMenu.LEFT_RIGHT);
 		getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 		
@@ -79,7 +83,14 @@ public class MainActivity3 extends SlidingFragmentActivity implements OnClickLis
 		Button listButton=(Button)findViewById(R.id.indexListButton);
 		listButton.setOnClickListener(this);
 		Button rightButton=(Button)findViewById(R.id.indexRightButton);
-		rightButton.setOnClickListener(this);
+		rightButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				getSlidingMenu().showSecondaryMenu(false);
+				
+			}
+		});
 		iv1=(ImageView)findViewById(R.id.indexImageView1);
 		//BitmapFactory bf=new BitmapFactory();
 		bm1=BitmapFactory.decodeResource(getResources(), R.drawable.swld_pic1);
@@ -145,6 +156,23 @@ public class MainActivity3 extends SlidingFragmentActivity implements OnClickLis
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		 toggle();
+	}
+	
+	public  String getJsonString(String filename){
+		StringBuilder sb=new StringBuilder();
+		AssetManager assetManager=getAssets();
+		try {
+			BufferedReader br=new BufferedReader(new InputStreamReader(assetManager.open(filename)));
+			String lineString="";
+			while((lineString=br.readLine())!=null){
+			//	Log.d("lineString", lineString);
+				sb.append(lineString);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return sb.toString();
 	}
 
 }

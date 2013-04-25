@@ -10,6 +10,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.util.Log;
+
 import com.fss.qdnewsproject1.jsonitem.JidiItem;
 import com.fss.qdnewsproject1.jsonitem.ShopsItem;
 
@@ -60,6 +62,22 @@ public class JsonUtils {
             e.printStackTrace(); 
         } 
         return shopsItem; 
+    }
+    
+    public static String getJianjieItem(String key,String jsonString){
+    	String jianjie="";
+    	 try {
+			JSONObject jsonObject = new JSONObject(jsonString);
+		//	jsonObject.getJSONObject(key).getString("");
+		//	Log.d("json", jsonObject.getJSONObject(key).getString("").toString());
+		//	Log.d("json", jsonObject.getJSONObject(key).toString());
+		//Log.d("json", jsonObject.getString("about"))	;
+			 jianjie=jsonObject.getString("about");
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+    	return jianjie;
     }
     
     public static JidiItem getJidiItem(String key,String jsonString){ 
@@ -188,6 +206,7 @@ public class JsonUtils {
                     map.put(json_key, json_value); 
                 } 
                 list.add(map); 
+               
             } 
         } catch (JSONException e) { 
             // TODO Auto-generated catch block 

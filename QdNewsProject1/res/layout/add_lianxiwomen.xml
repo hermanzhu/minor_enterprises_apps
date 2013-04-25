@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" android:background="@drawable/di" >
+    tools:context=".MainActivity"  >
 
     <RelativeLayout
         android:id="@+id/lianxiwomen_topBar"
@@ -30,8 +30,9 @@
     </RelativeLayout>
     <ListView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/ditu"
+            android:background="@drawable/di"
             android:id="@+id/lianxiwomenListView1"
+            android:layout_below="@id/lianxiwomen_topBar"
 ></ListView>
 
 </RelativeLayout>

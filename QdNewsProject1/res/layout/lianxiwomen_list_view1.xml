@@ -12,17 +12,17 @@
            
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:textSize="24sp"
+           android:textSize="22sp"
             android:id="@+id/lianxiwomenListViewTextView_1"
             android:textColor="#8A360F"
-            android:paddingRight="50dp"
+            android:paddingRight="70dp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:text="  咨询热线" 
             
             android:paddingRight="50dp"
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingRight="50dp"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:text="  咨询热线1" 
             
             android:id="@+id/lianxiwomenListViewTextView_3"
