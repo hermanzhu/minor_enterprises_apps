@@ -13,7 +13,6 @@ Markdown支持类 Setext 和类 atx 形式，下面都以类atx形式为例。�
 
 * `#` `标题`在行首插入1-6个`#`，对应标题的1-6阶，也就是h1-h6 
 ~~~
-[java]
 如：
 # 这是h1
 ## 这是h2
@@ -29,7 +28,6 @@ Markdown支持类 Setext 和类 atx 形式，下面都以类atx形式为例。�
 
 * `*` `-` `+` `无序列表`。markdown支持有序列表和无序列表。无序列表使用星号、加号或是减号作为列表标记,多级列表直接空出制表符或4个空格。
 ~~~
-[java]
 如：
 * 000000
 	* 1111111
@@ -48,8 +46,8 @@ Markdown支持类 Setext 和类 atx 形式，下面都以类atx形式为例。�
 ---
 
 * `1.` `有序列表`则使用数字接着一个英文句点.
+
 ~~~
-[java]
 如：
 1. 11111111
 2. 22222222
@@ -67,60 +65,63 @@ Markdown支持类 Setext 和类 atx 形式，下面都以类atx形式为例。�
 ---
 
 * <code>`</code> <code>code标签</code> 
+
 ~~~
-[java]
 如：
 `code`
 ~~~
+
 显示为
 `code`
 
 ---
 
 * `[link](url)` `链接` 使用此格式可以创建一个链接 
+
 ~~~
-[java]
 如：
 [google](http://www.google.com)
 ~~~
+
 显示为
 [google](http://www.google.com)
 
 ---
 
 * `*` `_` `强调` 被星号或下划线包裹的字符会显示为强调 
+
 ~~~
-[java]
-如：
+如：	
 	*bic* _bic_ **bic** __bic__
 ~~~
+
 显示为
 *bic* _bic_ **bic** __bic__
 
 ---
 
 * `~~~` `编程语言` 这是markdown的一个扩展，用来显示编程语言并设置样式 
+
 ~~~
-[java]
 如：
-	```php
+	~~~php
 	function abc($abc){
 		echo $abc;
 	}
-	``
+	~~~
 ~~~
+
 显示为
 ```php
 function abc($abc){
 	echo $abc;
 }
-``
+```
 
 
 ---
 `-*_` `分割线` 使用3个以上的星号、减号、下划线来建立一个分割线，行内不能有其他东西。
 ~~~
-[java]
 如：
 ---
 ***
