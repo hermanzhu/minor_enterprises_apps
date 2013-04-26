@@ -88,44 +88,44 @@ public class RightMenuFragment extends Fragment {
 		return contextView;
 	}
 	
-	protected List<HashMap<String, Object>> initialList(){
-		listItems = new ArrayList<HashMap<String, Object>>();
-//		List<HashMap<String, Object>> listItems = new ArrayList<HashMap<String, Object>>();
-
-//		for (int i = 0; i < 5; i++) {
-//			HashMap<String, Object> map = new HashMap<String, Object>();
-//			map.put("ItemImage", R.drawable.dianhua12x);
-//			map.put("TextItem", "咨询电话");
-//			map.put("JiantouImage", R.drawable.jiantou12x);
-//			listItems.add(map);
+//	protected List<HashMap<String, Object>> initialList(){
+//		listItems = new ArrayList<HashMap<String, Object>>();
+////		List<HashMap<String, Object>> listItems = new ArrayList<HashMap<String, Object>>();
 //
-//		}
-		HashMap<String, Object> map = new HashMap<String, Object>();
-		map.put("ItemImage", R.drawable.jieshao2x);
-		map.put("TextItem", "  公司介绍");
-		map.put("JiantouImage", R.drawable.jiantou12x);
-		listItems.add(map);
-		map=new HashMap<String, Object>();
-		map.put("ItemImage", R.drawable.gedian2x);
-		map.put("TextItem", "  全国各店");
-		map.put("JiantouImage", R.drawable.jiantou12x);
-		listItems.add(map);
-		map=new HashMap<String, Object>();
-		map.put("ItemImage", R.drawable.yuyue12x);
-		map.put("TextItem", "  在线预约");
-		map.put("JiantouImage", R.drawable.jiantou12x);
-		listItems.add(map);
-//		int iteri=0;
-//		for (HashMap<String, Object> hashMap : listItems) {
-//			iteri++;
-//			System.out.println("-----"+iteri+"----"+hashMap.get("TextItem"));
-//		}
+////		for (int i = 0; i < 5; i++) {
+////			HashMap<String, Object> map = new HashMap<String, Object>();
+////			map.put("ItemImage", R.drawable.dianhua12x);
+////			map.put("TextItem", "咨询电话");
+////			map.put("JiantouImage", R.drawable.jiantou12x);
+////			listItems.add(map);
+////
+////		}
+//		HashMap<String, Object> map = new HashMap<String, Object>();
+//		map.put("ItemImage", R.drawable.jieshao2x);
+//		map.put("TextItem", "  公司介绍");
+//		map.put("JiantouImage", R.drawable.jiantou12x);
+//		listItems.add(map);
+//		map=new HashMap<String, Object>();
+//		map.put("ItemImage", R.drawable.gedian2x);
+//		map.put("TextItem", "  全国各店");
+//		map.put("JiantouImage", R.drawable.jiantou12x);
+//		listItems.add(map);
+//		map=new HashMap<String, Object>();
+//		map.put("ItemImage", R.drawable.yuyue12x);
+//		map.put("TextItem", "  在线预约");
+//		map.put("JiantouImage", R.drawable.jiantou12x);
+//		listItems.add(map);
+////		int iteri=0;
+////		for (HashMap<String, Object> hashMap : listItems) {
+////			iteri++;
+////			System.out.println("-----"+iteri+"----"+hashMap.get("TextItem"));
+////		}
+////		
 //		
-		
-		return listItems;
-
-	}
-	
+//		return listItems;
+//
+//	}
+//	
 	public class RightMenuTask1 extends  AsyncTask<List<HashMap<String, Object>>, Integer, List<HashMap<String, Object>>>{
 		List<HashMap<String, Object>> listItems = null;
 		

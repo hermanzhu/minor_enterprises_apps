@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/ditu" >
+      <RelativeLayout
+        android:id="@+id/jiditaocanTopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dingbu2x" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dianhua12x"
+            android:layout_centerVertical="true"
+            android:id="@+id/jiditaocan_imageView_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:text="海岛" 
+            android:textColor="#FFFFFF"
+            android:id="@+id/jiditaocan_textView"/>
+      
+        
+    </RelativeLayout>
+    <TabHost android:id="@+id/jiditaocanTabHost"
+        	  android:layout_width="fill_parent"
+        	  android:layout_height="wrap_content"
+        	  android:layout_below="@id/jiditaocanTopbar"
+        	  android:background="@drawable/ditu"
+        	></TabHost>
+
+</RelativeLayout>
